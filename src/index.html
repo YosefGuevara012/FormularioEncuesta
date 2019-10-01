@@ -16,9 +16,48 @@
   <input type="text" name="edad" size="40" placeholder="Ingrese su edad" required> 
   </div>
 </div>
- <div id="desplegable"></div>
- <div id="circulos"></div>
- <div id="cuadrados"></div>
+ <div id="input-selection">
+   <div class="labels">Género:</div>
+   <div class="infotab">
+     <input type="radio" name="gender" value="Masculino">Masculino<br>
+     <input type="radio" name="gender" value="Femenino">Femenino<br>
+     <input type="radio" name="gender" value="Femenino">LGBTIQ<br>
+     <input type="radio" name="gender" value="Femenino">Otro<br>
+   </div>
+   <div class="labels">¿Cúal es tu nivel de experiencia?
+   </div>
+   <div class="infotab">
+     <select>
+       <option disabled selected value>Seleccione una opción</option>
+       <option value="Avanzado">Avanzado</option>
+       <option value="Intermedio">Intermedio</option>
+       <option value="Principiante">Principiante</option>
+     </select>
+   </div>
+ </div>
+ <div id="checkbox-input">
+   <div class="labels">Especialidades:</div>
+   <div class="infotab">
+    <input type="checkbox" name="especialidad1" value="rally">Campo a través o rally<br>
+    <input type="checkbox" name="especialidad2" value="Descenso"> Descenso<br>
+    <input type="checkbox" name="especialidad2" value="uphill"> Ascenso (Uphill)<br>
+    <input type="checkbox" name="especialidad3" value="Avalancha">Avalancha (Megavalanche o Downhill Maratón)<br>
+    <input type="checkbox" name="especialidad4" value="Enduro">  Enduro (All-Mountain)<br>
+    <input type="checkbox" name="especialidad5" value="Slalom"> Eslalon (Slalom (D))<br>
+    <input type="checkbox" name="especialidad6" value="Rural"> Rural Bike<br>
+    <input type="checkbox" name="especialidad7" value="Saltos">  Saltos (Dirt Jump)<br>
+    <input type="checkbox" name="especialidad8" value=" Slopestyle"> Slopestyle<br>
+    <input type="checkbox" name="especialidad9" value="Street">  Street o urban<br>    
+   </div>
+ </div>
+ <div id="textarea-input">
+   <div class="labels">Comentarios adicionales:</div>
+   <div class="infotab">
+     <textarea name="comments" rows="10" cols="30" placeholder="Ingrese sus comentarios adicionales aquí..."></textarea>
+    </div>
+   </div>
+ </div>
+ <div id="submit-button"> <button id="submit" type="submit">Enviar</button> </div> 
  </form>
 </section>
-<footer></footer>
+<!--<footer></footer>-->
