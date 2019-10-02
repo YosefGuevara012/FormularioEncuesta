@@ -1,34 +1,34 @@
 <h1 id="title">Ciclomontañismo Colombia</h1>
 <section id="contanier">
   <p id="description">Forma de ciclomontañismo para las rutas en colombia</p>
-<form action="/action_page.php">  
+<form action="/action_page.php" id="survey-form">  
 <div id="basicinfo">
-  <div class="labels" id="name">*Nombre:</div>
+  <div class="labels" id="name-label">*Nombre:</div>
   <div class=infotab> 
-  <input type="text" name="nombre" size="40" placeholder="Ingrese su nombre completo" required> 
+  <input type="text" name="nombre" size="40" placeholder="Ingrese su nombre completo" id="name"required> 
   </div>
-  <div class="labels">*Correo:</div>
+  <div class="labels" id="email-label">*Correo:</div>
   <div class="infotab">
-  <input type="text" name="correo" size="40" placeholder="Ingrese su nombre completo" required> 
+  <input type="email" name="correo" size="40" placeholder="Ingrese su correo electrónico" id="email" required> 
   </div>
-  <div class="labels">*Edad:</div>
+  <div class="labels"  id="number-label">*Edad:</div>
   <div class="infotab">
-  <input type="text" name="edad" size="40" placeholder="Ingrese su edad" required> 
+  <input type="number" name="edad" size="40" placeholder="Ingrese su edad" id="number" min="1" max="80" required> 
   </div>
 </div>
  <div id="input-selection">
    <div class="labels">Género:</div>
    <div class="infotab">
-     <input type="radio" name="gender" value="Masculino">Masculino<br>
-     <input type="radio" name="gender" value="Femenino">Femenino<br>
-     <input type="radio" name="gender" value="Femenino">LGBTIQ<br>
-     <input type="radio" name="gender" value="Femenino">Otro<br>
+     <input type="radio" name="radio-buttons" value="Masculino">Masculino<br>
+     <input type="radio" name="radio-buttons" value="Femenino">Femenino<br>
+     <input type="radio" name="radio-buttons" value="LGBTIQ">LGBTIQ<br>
+     <input type="radio" name="radio-buttons" value="Otro">Otro<br>
    </div>
    <div class="labels">¿Cúal es tu nivel de experiencia?
    </div>
    <div class="infotab">
-     <select>
-       <option disabled selected value>Seleccione una opción</option>
+     <select id="dropdown">
+       <option disabled value>Seleccione una opción</option>
        <option value="Avanzado">Avanzado</option>
        <option value="Intermedio">Intermedio</option>
        <option value="Principiante">Principiante</option>
@@ -38,16 +38,16 @@
  <div id="checkbox-input">
    <div class="labels">Especialidades:</div>
    <div class="infotab">
-    <input type="checkbox" name="especialidad1" value="rally">Campo a través o rally<br>
-    <input type="checkbox" name="especialidad2" value="Descenso"> Descenso<br>
-    <input type="checkbox" name="especialidad2" value="uphill"> Ascenso (Uphill)<br>
-    <input type="checkbox" name="especialidad3" value="Avalancha">Avalancha (Megavalanche o Downhill Maratón)<br>
-    <input type="checkbox" name="especialidad4" value="Enduro">  Enduro (All-Mountain)<br>
-    <input type="checkbox" name="especialidad5" value="Slalom"> Eslalon (Slalom (D))<br>
-    <input type="checkbox" name="especialidad6" value="Rural"> Rural Bike<br>
-    <input type="checkbox" name="especialidad7" value="Saltos">  Saltos (Dirt Jump)<br>
-    <input type="checkbox" name="especialidad8" value=" Slopestyle"> Slopestyle<br>
-    <input type="checkbox" name="especialidad9" value="Street">  Street o urban<br>    
+    <input type="checkbox" name="prefer" value="rally">Campo a través o rally<br>
+    <input type="checkbox" name="prefer" value="Descenso"> Descenso<br>
+    <input type="checkbox" name="prefer" value="uphill"> Ascenso (Uphill)<br>
+    <input type="checkbox" name="prefer" value="Avalancha">Avalancha (Megavalanche o Downhill Maratón)<br>
+    <input type="checkbox" name="prefer" value="Enduro">  Enduro (All-Mountain)<br>
+    <input type="checkbox" name="prefer" value="Slalom"> Eslalon (Slalom (D))<br>
+    <input type="checkbox" name="prefer" value="Rural"> Rural Bike<br>
+    <input type="checkbox" name="prefer" value="Saltos">  Saltos (Dirt Jump)<br>
+    <input type="checkbox" name="prefer" value=" Slopestyle"> Slopestyle<br>
+    <input type="checkbox" name="prefer" value="Street">  Street o urban<br>    
    </div>
  </div>
  <div id="textarea-input">
@@ -57,7 +57,7 @@
     </div>
    </div>
  </div>
- <div id="submit-button"> <button id="submit" type="submit">Enviar</button> </div> 
+ <div id="submit-button"> <button id="submit" type="submit" class="Enviar">Enviar</button> </div> 
  </form>
 </section>
 <!--<footer></footer>-->
