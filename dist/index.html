@@ -8,21 +8,21 @@
 <body>
 <!-- partial:index.partial.html -->
 <h1 id="title">Ciclomontañismo Colombia</h1>
-<section id="contanier">
+<section id="container">
   <p id="description">Forma de ciclomontañismo para las rutas en colombia</p>
 <form action="/action_page.php" id="survey-form">  
-<div id="basicinfo">
-  <div class="labels" id="name-label">*Nombre:</div>
+ <div id="basicinfo">
+  <div class="labels" ><label id="name-label" for="name">* Nombre: </label></div>
   <div class=infotab> 
-  <input type="text" name="nombre" size="40" placeholder="Ingrese su nombre completo" id="name"required> 
+  <input type="text" name="nombre"  placeholder="Ingrese su nombre completo" id="name"required class="text-size"> 
   </div>
-  <div class="labels" id="email-label">*Correo:</div>
+  <div class="labels"><label id="email-label" for="email">* Correo: </label></div>
   <div class="infotab">
-  <input type="email" name="correo" size="40" placeholder="Ingrese su correo electrónico" id="email" required> 
+  <input type="email" name="correo" placeholder="Ingrese su correo electrónico" id="email" required class="text-size"> 
   </div>
-  <div class="labels"  id="number-label">*Edad:</div>
+  <div class="labels"  ><label id="number-label" for="number">* Edad: </label></div>
   <div class="infotab">
-  <input type="number" name="edad" size="40" placeholder="Ingrese su edad" id="number" min="1" max="80" required> 
+  <input type="number" name="edad" placeholder="Ingrese su edad" id="number" min="1" max="80" required class="text-size"> 
   </div>
 </div>
  <div id="input-selection">
@@ -36,7 +36,7 @@
    <div class="labels">¿Cúal es tu nivel de experiencia?
    </div>
    <div class="infotab">
-     <select id="dropdown">
+     <select id="dropdown" class="text-size">
        <option disabled value>Seleccione una opción</option>
        <option value="Avanzado">Avanzado</option>
        <option value="Intermedio">Intermedio</option>
@@ -62,14 +62,13 @@
  <div id="textarea-input">
    <div class="labels">Comentarios adicionales:</div>
    <div class="infotab">
-     <textarea name="comments" rows="10" cols="30" placeholder="Ingrese sus comentarios adicionales aquí..."></textarea>
+     <textarea name="comments" placeholder="Ingrese sus comentarios adicionales aquí..." class="text-area"></textarea>
     </div>
    </div>
- </div>
- <div id="submit-button"> <button id="submit" type="submit" class="Enviar">Enviar</button> </div> 
+ <div id="submit-button"> <button id="submit" type="submit">Enviar</button> 
+ </div> 
  </form>
 </section>
-<!--<footer></footer>-->
 <!-- partial -->
   <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
 
